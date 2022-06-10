@@ -1,0 +1,17 @@
+class CustomerxAPI::CancelTransactionalSells
+  def create(**kwds)
+    CustomerxAPI.send(endpoint, :post, kwds)
+  end
+
+  private
+
+  def endpoint(params = {})
+    endpoint = 'cancel_transactional_sells?'
+    params.each do |param|
+      endpoint = "#{endpoint}#{param}=#{params[param]}&"
+    end
+    endpoint[-1] = ''
+
+    endpoint
+  end
+end

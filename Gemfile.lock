@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    CustomerxAPI (0.1.0)
+      json (>= 2.3.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json (2.6.2)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  CustomerxAPI!
+
+BUNDLED WITH
+   2.3.3
